@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Archivo', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1512px;
+    padding: 0 120px;
+    margin: 0 auto;
+}
+
+.d-flex {
+    display: flex;
+    &.column {
+        flex-direction: column;
+    }
+    &.align-center {
+        align-items: center;
+    }
+    &.align-start {
+        align-items: flex-start;
+    }
+    &.align-end {
+        align-items: flex-end;
+    }
+    &.justify-center {
+        justify-content: center;
+    }
+    &.justify-between {
+        justify-content: space-between;
+    }
+    .justify-end {
+        justify-content: flex-end;
+    }
+}
+
+.text-xl {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.text-l {
+    font-size: 42px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.text-m {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.text-xs {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+button {
+    border: 1px solid rgb(63, 116, 156);
+    outline: none;
+    min-width: 100px;
+    padding: 12px;
+    height: min-content;
+    border-radius: 20px;
+    color: white;
+    background: #2857ffaf;
+    transition: all .3s ease;
+    &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+    }
+}
+
+input, textarea {
+    border: 1px solid #4520ff;
+    outline: none;
+    padding: 12px 16px;
+    width: 100%;
+    border-radius: 16px;
+}
+
+textarea {
+    resize: none;
+    min-height: 200px;
+}
+
+.success-popup, .error-popup {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+  
+.success-popup {
+    background-color: #c1e7c1;
+    border-color: #4cae4c;
+}
+  
+.error-popup {
+    background-color: #f2dede;
+    border-color: #d9534f;
+}
+
+ul {
+    list-style: none;
+    li {
+        background: #f1faff;
+        padding: 8px 10px;
+        border-radius: 5px;
+        & + li {
+            margin-top: 10px;
+        }
+    }
+}   
