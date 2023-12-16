@@ -1,0 +1,38 @@
+version: '3'
+
+services:
+  auth:
+    build:
+      context: ./auth
+    ports:
+      - "5000:5000"
+    environment:
+      - DATABASE_URL=sqlite:////data/auth.db
+    volumes:
+      - auth-data:/data
+
+  products:
+    build:
+      context: ./products
+    ports:
+      - "5001:5001"
+    environment:
+      - DATABASE_URL=sqlite:////data/products.db
+    volumes:
+      - products-data:/data
+
+  orders:
+    build:
+      context: ./orders
+    ports:
+      - "5002:5002"
+    environment:
+      - DATABASE_URL=sqlite:////data/orders.db
+    volumes:
+      - orders-data:/data    
+
+volumes:
+  auth-data:
+  products-data:
+  orders-data:
+  

@@ -1,0 +1,9 @@
+Flask==1.1.4
+Flask-SQLAlchemy
+SQLAlchemy==1.4.23
+Werkzeug==0.16.1
+requests==2.26.0
+markupsafe==1.1.1
+Flask-Cors==3.0.10
+PyJWT==2.8.0
+Flask-Migrate
